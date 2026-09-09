@@ -1,0 +1,384 @@
+/* =====================================================================
+   LAYYAH'S TRAVEL CO. - brand overrides for the Gowilds template
+   Loaded after style.css. Palette: plum / berry / blush / cream / gold.
+   Base colours and fonts are already swapped inside style.css.
+   ===================================================================== */
+:root {
+  --layyahs-plum: #321026;
+  --layyahs-plum-800: #461735;
+  --layyahs-berry: #8f355f;
+  --layyahs-blush: #f0d9df;
+  --layyahs-cream: #fffaf2;
+  --layyahs-cream-dark: #faf3ea;
+  --layyahs-gold: #c9a45d;
+  --layyahs-gold-dark: #9f7a37;
+  --layyahs-charcoal: #292428;
+}
+
+body {
+  background-color: var(--layyahs-cream);
+}
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.01em;
+}
+.hero-wrapper .hero-content h1 {
+  font-size: clamp(2.5rem, 4.8vw, 4.6rem);
+  line-height: 1.12;
+}
+.sub-title {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.black-bg .sub-title {
+  background: rgba(201, 164, 93, 0.14);
+}
+
+/* ---------- Header ---------- */
+.header-navigation .brand-logo img {
+  max-height: 58px;
+  width: auto;
+}
+.header-navigation .mobile-logo .brand-logo img {
+  max-height: 52px;
+}
+.nav-right-item .menu-button {
+  display: flex;
+  gap: 12px;
+}
+.main-btn.whatsapp-btn i {
+  color: #25d366;
+}
+.header-navigation.breakpoint-on .nav-menu .menu-button {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.header-navigation.breakpoint-on .nav-menu .menu-button .main-btn {
+  justify-content: center;
+}
+
+/* ---------- Hero ---------- */
+.hero-wrapper .hero-content .text-button p {
+  color: rgba(255, 255, 255, 0.86);
+}
+.hero-wrapper .hero-image img {
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  max-height: 640px;
+  object-fit: cover;
+}
+
+/* ---------- Monthly specials ---------- */
+.specials-intro p {
+  max-width: 640px;
+  margin-inline: auto;
+}
+.single-features-item .img-holder img {
+  aspect-ratio: 422 / 500;
+  object-fit: cover;
+}
+.single-features-item .special-tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  padding: 7px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--layyahs-plum);
+  background: var(--layyahs-gold);
+}
+.single-features-item .img-holder .content .text h4.title {
+  font-size: 22px;
+}
+.single-features-item .img-holder .content p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.single-features-item .img-holder .content p .price {
+  color: var(--layyahs-berry);
+  font-weight: 700;
+}
+.specials-note {
+  font-size: 14px;
+}
+
+/* ---------- Services tabs (dark section) ---------- */
+.activity-content-box .icon i {
+  color: var(--layyahs-gold);
+}
+.activity-content-box .main-btn {
+  margin-top: 30px;
+}
+.activity-image-box img {
+  width: 100%;
+  aspect-ratio: 390 / 545;
+  object-fit: cover;
+}
+
+/* ---------- Service categories ---------- */
+.fancy-icon-box .icon {
+  font-size: 30px;
+  background: var(--layyahs-blush);
+  color: var(--layyahs-plum);
+}
+.fancy-icon-box:hover .icon {
+  background: var(--layyahs-berry);
+  color: #fff;
+}
+.fancy-icon-box .text .btn-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--layyahs-berry);
+}
+.fancy-icon-box .text .btn-link i {
+  margin-left: 6px;
+  font-size: 13px;
+}
+
+/* ---------- Enquiry form ---------- */
+.booking-form .form_control,
+.booking-form .nice-select {
+  background: #fff;
+}
+.booking-form .nice-select {
+  color: #4a4348;
+  font-weight: 300;
+}
+.booking-image-box img {
+  width: 100%;
+  aspect-ratio: 585 / 640;
+  object-fit: cover;
+}
+.enquiry-alt {
+  font-size: 15px;
+}
+.enquiry-alt a {
+  color: var(--layyahs-berry);
+  font-weight: 600;
+}
+
+/* ---------- CTA ---------- */
+.cta-content-box .cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.cta-content-box p {
+  max-width: 620px;
+  margin: 0 auto 30px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ---------- Reviews ---------- */
+.author-thumb-title .author-thumb .author-initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--layyahs-blush);
+  color: var(--layyahs-plum);
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+.testimonial-one_image-box img {
+  width: 100%;
+  border-radius: 12px;
+  aspect-ratio: 875 / 565;
+  object-fit: cover;
+}
+.reviews-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.reviews-actions .main-btn.filled-btn.google-btn i {
+  color: #4285f4;
+}
+
+/* ---------- Social channels ---------- */
+.single-blog-post .post-thumbnail img {
+  aspect-ratio: 410 / 290;
+  object-fit: cover;
+}
+.single-blog-post .post-meta span i {
+  color: var(--layyahs-berry);
+}
+.social-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.social-strip a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 40px;
+  font-weight: 500;
+  color: var(--layyahs-plum);
+  background: var(--layyahs-blush);
+  transition: all 0.3s;
+}
+.social-strip a:hover {
+  color: #fff;
+  background: var(--layyahs-berry);
+}
+
+/* ---------- Gallery strip ---------- */
+.single-gallery-item .gallery-img img {
+  aspect-ratio: 332 / 300;
+  object-fit: cover;
+}
+
+/* ---------- Footer ---------- */
+.main-footer .footer-logo img {
+  max-height: 54px;
+  width: auto;
+}
+.footer-top .social-box ul.social-link li a:hover {
+  color: var(--layyahs-plum);
+  background-color: var(--layyahs-gold);
+}
+.footer-store-widget .main-btn {
+  margin-top: 5px;
+}
+.footer-copyright .footer-text p span {
+  color: var(--layyahs-gold) !important;
+}
+
+/* ---------- Compact header on 1200-1399px laptops (menu + two buttons) ---------- */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .header-one .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .header-navigation .brand-logo img {
+    max-height: 46px;
+  }
+  .header-navigation .main-menu ul > li {
+    margin-left: 11px;
+    margin-right: 11px;
+  }
+  .header-navigation .main-menu ul > li > a {
+    font-size: 15px;
+  }
+  .nav-right-item .menu-button .main-btn {
+    padding: 3px 3px 3px 22px;
+    font-size: 14px;
+  }
+  .nav-right-item .menu-button .main-btn i {
+    margin-left: 12px;
+  }
+}
+
+
+/* ---------- Inner pages ---------- */
+.page-banner .page-banner-content h1 {
+  text-transform: none;
+}
+.contact-info-item .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 34px;
+  color: var(--layyahs-plum);
+  background: var(--layyahs-blush);
+}
+.contact-info-item .info p {
+  margin-bottom: 4px;
+}
+.contact-info-item .info p a:hover {
+  color: var(--layyahs-berry);
+}
+.contact-form .nice-select {
+  display: block;
+  float: none;
+  width: 100% !important;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 30px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 7px;
+  font-weight: 300;
+  color: #4a4348;
+  background: var(--layyahs-cream-dark);
+}
+.contact-form .nice-select.open .list {
+  width: 100%;
+}
+.contact-form .enquiry-alt {
+  margin-bottom: 0;
+}
+.single-team-item .member-img .member-initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: var(--layyahs-blush);
+  color: var(--layyahs-plum);
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  font-weight: 700;
+}
+.service-group-heading .service-group-number {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  line-height: 1;
+  color: var(--layyahs-gold);
+}
+.service-group-heading h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+.service-group.gray-bg .fancy-icon-box {
+  background: #fff;
+}
+.reviews-wrapper.white-bg {
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 60px rgba(50, 16, 38, 0.06);
+}
+.reviews-wrapper .reviews-inner-box .rating-value .rate-score {
+  font-family: "Playfair Display", serif;
+  font-size: 96px;
+}
+.gw-testimonial-item-two {
+  height: calc(100% - 30px);
+  box-shadow: 0 10px 60px rgba(50, 16, 38, 0.06);
+}
+.gw-testimonial-item-two .testimonial-inner-content > p {
+  font-size: 16px;
+  line-height: 28px;
+}
+.gw-testimonial-item-two .quote-rating-box .icon img {
+  width: 44px;
+}
+.gw-testimonial-item-two .author-thumb-title .author-thumb .author-initial {
+  width: 56px;
+  height: 56px;
+  font-size: 22px;
+}
+.gw-testimonial-item-two .author-thumb-title .author-thumb {
+  width: 56px;
+}
+.gw-testimonial-item-two .author-thumb-title .author-title h3 {
+  font-size: 20px;
+}
